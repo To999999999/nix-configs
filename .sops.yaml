@@ -1,0 +1,10 @@
+keys:
+  - &pi-user age16q69z3gt2c6gvz4sd5uw5x29c9xed827wv8g2upq0m8a0rhsk4fq4n9sct
+  - &pi-host age1ahwzvyveyg7s8z6gekafaaj4qsqxphquef6ahymkrenr5x98fe8qmlquaq
+
+creation_rules:
+  - path_regex: secrets/[^/]+\.yaml$
+    key_groups:
+      - age:
+          - *pi-user
+          - *pi-host

@@ -3,8 +3,12 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./modules/storage.nix
     ./modules/ssh.nix
     ./modules/users.nix
+    ./modules/wireguard.nix
+    ./modules/nfs.nix
+    ./modules/adguard.nix
   ];
 
   nix.settings.experimental-features = [
