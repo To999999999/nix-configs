@@ -9,6 +9,7 @@
     ./modules/wireguard.nix
     ./modules/nfs.nix
     ./modules/adguard.nix
+    ./modules/fan.nix
   ];
 
   nix.settings.experimental-features = [
